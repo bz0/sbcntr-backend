@@ -31,5 +31,6 @@ phases:
 artifacts:
     files:
         - imageDetail.json
+        # BuildArtifactでappspec.ymlとtaskdef.jsonを出力する
         - appspec.yml
         - taskdef.json
