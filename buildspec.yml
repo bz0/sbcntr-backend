@@ -27,7 +27,7 @@ phases:
             - echo Pushing the Docker image…
             - docker image push ${REPOSITORY_URI}:${IMAGE_TAG}
             - printf '{"name":"%s","ImageURI":"%s"}' $ECR_REPOSITORY_NAME $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
-# 出力アーティファクトの指定
+
 artifacts:
     files:
         - imageDetail.json
